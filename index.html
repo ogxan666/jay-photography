@@ -66,15 +66,9 @@
     border: 1px solid var(--frame, var(--black));
     display: flex;
   }
-  .tile > * { flex: 1; }
-  .tile img, .tile .ph { display: block; width: 100%; height: 100%; object-fit: cover; }
-  .ph {
-    background: #f3f3f3;
-    display: grid; place-items: center;
-    font-size: 10px; text-transform: uppercase;
-  }
-  .break { margin: 0 0 var(--gap); aspect-ratio: 16 / 9; }
-  .break .ph { height: 100%; }
+  .tile img, .break img { display: block; width: 100%; height: auto; }
+  .item .tile img { height: 100%; object-fit: cover; }
+  .break { margin: 0 0 var(--gap); }
 
   /* Section labels and captions */
   .label { font-size: 10px; line-height: 1; text-transform: uppercase; margin-bottom: var(--gap); }
@@ -121,7 +115,9 @@
 </head>
 <body>
 <nav>
-  <a href="#work">Work</a>
+  <a href="#portrait">Portrait</a>
+  <a href="#street">Street</a>
+  <a href="#concert">Concert</a>
   <a href="#shop">Shop</a>
   <a href="#contact">Contact</a>
 </nav>
@@ -130,21 +126,78 @@
   <h1 class="wordmark">Jay</h1>
 
   <main>
-    <section id="work">
-      <p class="label">Selected work</p>
+    <section id="portrait">
+      <p class="label">Portrait — 21</p>
       <div class="masonry">
-        <figure class="tile" style="--frame: var(--vermillion); aspect-ratio: 3/4"><div class="ph">Photo 01</div></figure>
-        <figure class="tile" style="--frame: var(--cobalt); aspect-ratio: 4/3"><div class="ph">Photo 02</div></figure>
-        <figure class="tile" style="--frame: var(--fern); aspect-ratio: 1/1"><div class="ph">Photo 03</div></figure>
-        <figure class="tile" style="--frame: var(--marigold); aspect-ratio: 2/3"><div class="ph">Photo 04</div></figure>
-        <figure class="tile" style="--frame: var(--brass); aspect-ratio: 3/4"><div class="ph">Photo 05</div></figure>
-        <figure class="tile" style="--frame: var(--cobalt); aspect-ratio: 4/5"><div class="ph">Photo 06</div></figure>
+        <figure class="tile" style="--frame: var(--cobalt)"><img src="images/portrait/01.jpg" width="1066" height="1600" loading="lazy" alt="Portrait"></figure>
+        <figure class="tile" style="--frame: var(--fern)"><img src="images/portrait/02.jpg" width="1200" height="1600" loading="lazy" alt="Portrait"></figure>
+        <figure class="tile" style="--frame: var(--vermillion)"><img src="images/portrait/03.jpg" width="1066" height="1600" loading="lazy" alt="Portrait"></figure>
+        <figure class="tile" style="--frame: var(--brass)"><img src="images/portrait/04.jpg" width="1066" height="1600" loading="lazy" alt="Portrait"></figure>
+        <figure class="tile" style="--frame: var(--cobalt)"><img src="images/portrait/05.jpg" width="1600" height="1600" loading="lazy" alt="Portrait"></figure>
+        <figure class="tile" style="--frame: var(--black)"><img src="images/portrait/06.jpg" width="1066" height="1600" loading="lazy" alt="Portrait"></figure>
       </div>
-      <figure class="break"><div class="ph">Photo 07 — full width</div></figure>
+      <figure class="break"><img src="images/portrait/07.jpg" width="1600" height="1000" loading="lazy" alt="Portrait"></figure>
       <div class="masonry">
-        <figure class="tile" style="--frame: var(--marigold); aspect-ratio: 4/5"><div class="ph">Photo 08</div></figure>
-        <figure class="tile" style="--frame: var(--vermillion); aspect-ratio: 1/1"><div class="ph">Photo 09</div></figure>
-        <figure class="tile" style="--frame: var(--fern); aspect-ratio: 2/3"><div class="ph">Photo 10</div></figure>
+        <figure class="tile" style="--frame: var(--fern)"><img src="images/portrait/08.jpg" width="1200" height="1600" loading="lazy" alt="Portrait"></figure>
+        <figure class="tile" style="--frame: var(--cobalt)"><img src="images/portrait/09.jpg" width="1600" height="1600" loading="lazy" alt="Portrait"></figure>
+        <figure class="tile" style="--frame: var(--cobalt)"><img src="images/portrait/10.jpg" width="1066" height="1600" loading="lazy" alt="Portrait"></figure>
+        <figure class="tile" style="--frame: var(--black)"><img src="images/portrait/11.jpg" width="1280" height="1600" loading="lazy" alt="Portrait"></figure>
+        <figure class="tile" style="--frame: var(--brass)"><img src="images/portrait/12.jpg" width="1067" height="1600" loading="lazy" alt="Portrait"></figure>
+        <figure class="tile" style="--frame: var(--cobalt)"><img src="images/portrait/13.jpg" width="1066" height="1600" loading="lazy" alt="Portrait"></figure>
+        <figure class="tile" style="--frame: var(--black)"><img src="images/portrait/14.jpg" width="1066" height="1600" loading="lazy" alt="Portrait"></figure>
+        <figure class="tile" style="--frame: var(--cobalt)"><img src="images/portrait/15.jpg" width="1066" height="1600" loading="lazy" alt="Portrait"></figure>
+        <figure class="tile" style="--frame: var(--black)"><img src="images/portrait/16.jpg" width="1066" height="1600" loading="lazy" alt="Portrait"></figure>
+        <figure class="tile" style="--frame: var(--black)"><img src="images/portrait/17.jpg" width="1280" height="1600" loading="lazy" alt="Portrait"></figure>
+        <figure class="tile" style="--frame: var(--fern)"><img src="images/portrait/18.jpg" width="1066" height="1600" loading="lazy" alt="Portrait"></figure>
+        <figure class="tile" style="--frame: var(--brass)"><img src="images/portrait/19.jpg" width="1067" height="1600" loading="lazy" alt="Portrait"></figure>
+        <figure class="tile" style="--frame: var(--cobalt)"><img src="images/portrait/20.jpg" width="1200" height="1600" loading="lazy" alt="Portrait"></figure>
+        <figure class="tile" style="--frame: var(--cobalt)"><img src="images/portrait/21.jpg" width="1600" height="1000" loading="lazy" alt="Portrait"></figure>
+      </div>
+    </section>
+
+    <section id="street">
+      <p class="label">Street — 20</p>
+      <div class="masonry">
+        <figure class="tile" style="--frame: var(--marigold)"><img src="images/street/01.jpg" width="1066" height="1600" loading="lazy" alt="Street"></figure>
+        <figure class="tile" style="--frame: var(--cobalt)"><img src="images/street/02.jpg" width="1280" height="1600" loading="lazy" alt="Street"></figure>
+        <figure class="tile" style="--frame: var(--cobalt)"><img src="images/street/03.jpg" width="1066" height="1600" loading="lazy" alt="Street"></figure>
+        <figure class="tile" style="--frame: var(--brass)"><img src="images/street/04.jpg" width="1066" height="1600" loading="lazy" alt="Street"></figure>
+        <figure class="tile" style="--frame: var(--brass)"><img src="images/street/05.jpg" width="1600" height="1066" loading="lazy" alt="Street"></figure>
+        <figure class="tile" style="--frame: var(--fern)"><img src="images/street/06.jpg" width="1600" height="1066" loading="lazy" alt="Street"></figure>
+      </div>
+      <figure class="break"><img src="images/street/07.jpg" width="1600" height="1066" loading="lazy" alt="Street"></figure>
+      <div class="masonry">
+        <figure class="tile" style="--frame: var(--brass)"><img src="images/street/08.jpg" width="1600" height="1000" loading="lazy" alt="Street"></figure>
+        <figure class="tile" style="--frame: var(--cobalt)"><img src="images/street/09.jpg" width="1600" height="1000" loading="lazy" alt="Street"></figure>
+        <figure class="tile" style="--frame: var(--brass)"><img src="images/street/10.jpg" width="1066" height="1600" loading="lazy" alt="Street"></figure>
+        <figure class="tile" style="--frame: var(--brass)"><img src="images/street/11.jpg" width="1066" height="1600" loading="lazy" alt="Street"></figure>
+        <figure class="tile" style="--frame: var(--cobalt)"><img src="images/street/12.jpg" width="1066" height="1600" loading="lazy" alt="Street"></figure>
+        <figure class="tile" style="--frame: var(--cobalt)"><img src="images/street/13.jpg" width="1066" height="1600" loading="lazy" alt="Street"></figure>
+        <figure class="tile" style="--frame: var(--brass)"><img src="images/street/14.jpg" width="1600" height="1000" loading="lazy" alt="Street"></figure>
+        <figure class="tile" style="--frame: var(--brass)"><img src="images/street/15.jpg" width="1066" height="1600" loading="lazy" alt="Street"></figure>
+        <figure class="tile" style="--frame: var(--brass)"><img src="images/street/16.jpg" width="1066" height="1600" loading="lazy" alt="Street"></figure>
+        <figure class="tile" style="--frame: var(--brass)"><img src="images/street/17.jpg" width="1066" height="1600" loading="lazy" alt="Street"></figure>
+        <figure class="tile" style="--frame: var(--fern)"><img src="images/street/18.jpg" width="1600" height="1066" loading="lazy" alt="Street"></figure>
+        <figure class="tile" style="--frame: var(--fern)"><img src="images/street/19.jpg" width="1600" height="1066" loading="lazy" alt="Street"></figure>
+        <figure class="tile" style="--frame: var(--black)"><img src="images/street/20.jpg" width="1600" height="1000" loading="lazy" alt="Street"></figure>
+      </div>
+    </section>
+
+    <section id="concert">
+      <p class="label">Concert — 10</p>
+      <div class="masonry">
+        <figure class="tile" style="--frame: var(--marigold)"><img src="images/concert/01.jpg" width="1066" height="1600" loading="lazy" alt="Concert"></figure>
+        <figure class="tile" style="--frame: var(--cobalt)"><img src="images/concert/02.jpg" width="1280" height="1600" loading="lazy" alt="Concert"></figure>
+        <figure class="tile" style="--frame: var(--brass)"><img src="images/concert/03.jpg" width="1066" height="1600" loading="lazy" alt="Concert"></figure>
+        <figure class="tile" style="--frame: var(--vermillion)"><img src="images/concert/04.jpg" width="1066" height="1600" loading="lazy" alt="Concert"></figure>
+        <figure class="tile" style="--frame: var(--marigold)"><img src="images/concert/05.jpg" width="1066" height="1600" loading="lazy" alt="Concert"></figure>
+        <figure class="tile" style="--frame: var(--cobalt)"><img src="images/concert/06.jpg" width="1600" height="1066" loading="lazy" alt="Concert"></figure>
+      </div>
+      <figure class="break"><img src="images/concert/07.jpg" width="1600" height="1066" loading="lazy" alt="Concert"></figure>
+      <div class="masonry">
+        <figure class="tile" style="--frame: var(--cobalt)"><img src="images/concert/08.jpg" width="1066" height="1600" loading="lazy" alt="Concert"></figure>
+        <figure class="tile" style="--frame: var(--black)"><img src="images/concert/09.jpg" width="1066" height="1600" loading="lazy" alt="Concert"></figure>
+        <figure class="tile" style="--frame: var(--vermillion)"><img src="images/concert/10.jpg" width="1600" height="1066" loading="lazy" alt="Concert"></figure>
       </div>
     </section>
 
@@ -153,26 +206,26 @@
       <p class="shop-intro">Phone and desktop wallpapers from the archive. Instant download.</p>
       <div class="shop">
         <div class="item">
-          <figure class="tile" style="--frame: var(--vermillion)"><div class="ph">Wallpaper 01</div></figure>
-          <p class="caption"><span>Red Room</span><span>$5</span></p>
+          <figure class="tile" style="--frame: var(--cobalt)"><img src="images/portrait/01.jpg" width="1066" height="1600" loading="lazy" alt="Wallpaper 01"></figure>
+          <p class="caption"><span>No. 01 — Portrait</span><span>$5</span></p>
           <p class="caption"><span>Phone + Desktop</span></p>
           <a class="buy" href="#buy">Buy</a>
         </div>
         <div class="item">
-          <figure class="tile" style="--frame: var(--cobalt)"><div class="ph">Wallpaper 02</div></figure>
-          <p class="caption"><span>Blue Hour</span><span>$5</span></p>
+          <figure class="tile" style="--frame: var(--marigold)"><img src="images/street/01.jpg" width="1066" height="1600" loading="lazy" alt="Wallpaper 02"></figure>
+          <p class="caption"><span>No. 02 — Street</span><span>$5</span></p>
           <p class="caption"><span>Phone + Desktop</span></p>
           <a class="buy" href="#buy">Buy</a>
         </div>
         <div class="item">
-          <figure class="tile" style="--frame: var(--fern)"><div class="ph">Wallpaper 03</div></figure>
-          <p class="caption"><span>Green Study</span><span>$5</span></p>
+          <figure class="tile" style="--frame: var(--marigold)"><img src="images/concert/01.jpg" width="1066" height="1600" loading="lazy" alt="Wallpaper 03"></figure>
+          <p class="caption"><span>No. 03 — Concert</span><span>$5</span></p>
           <p class="caption"><span>Phone + Desktop</span></p>
           <a class="buy" href="#buy">Buy</a>
         </div>
         <div class="item">
-          <figure class="tile" style="--frame: var(--marigold)"><div class="ph">Wallpaper 04</div></figure>
-          <p class="caption"><span>Orange Field</span><span>$5</span></p>
+          <figure class="tile" style="--frame: var(--brass)"><img src="images/portrait/12.jpg" width="1067" height="1600" loading="lazy" alt="Wallpaper 04"></figure>
+          <p class="caption"><span>No. 04 — Portrait</span><span>$5</span></p>
           <p class="caption"><span>Phone + Desktop</span></p>
           <a class="buy" href="#buy">Buy</a>
         </div>
@@ -180,11 +233,13 @@
     </section>
 
     <section id="contact" class="contact">
-      <p class="label">Contact</p>
-      <p>Commissions and bookings: <a href="mailto:hello@example.com">hello@example.com</a></p>
+      <p class="label">About + Contact</p>
+      <p class="shop-intro">Hi! I&#x27;m Johanan, also known as Jo Do. I&#x27;m a Brooklyn based photographer and videographer. I began my journey in photography, and more recently videography, in 2020.</p>
+      <p><a href="mailto:jodo.media1@gmail.com">jodo.media1@gmail.com</a></p>
+      <p><a href="https://www.instagram.com/jo___do/">Instagram</a></p>
     </section>
 
-    <footer>© Jay 2026</footer>
+    <footer>© Jo Do 2026</footer>
   </main>
 </div>
 </body>
